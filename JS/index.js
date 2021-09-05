@@ -723,7 +723,6 @@ const address = "0x1510B4BC4f6d19b17b00F2d330cdc4B2BC1F470A";
 // 初始化合约
 const contract = new web3.eth.Contract(ABI, address, {});
 let clock = null;
-let countDownTimeInterval = null;
 
 function keyup_submit(e) {
     var evt = window.event || e;
@@ -742,7 +741,6 @@ function tokenURITransform() {
     contract.methods.tokenURI(NFT_id).call({}, function (error, result) {
         if (!error) {
             // 处理NFT_id
-            console.log(result);
             let value = result.split("base64,")[1];
 
             let cache = JSON.parse(window.atob(value));
@@ -763,6 +761,7 @@ function getCountdwon(NFT_id) {
         if (!error) {
             // 处理NFT_id
             countDown = result;
+            window.clearInterval(clock);
             clock = window.setInterval("displayTime()", 1000);
             return;
         }
