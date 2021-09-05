@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>DYNAMIC STORY</title>
     <link type="text/css" rel="styleSheet" href="./CSS/neon.css" />
     <script src="./JS/web3.min.js"></script>
     <script src="./JS/index.js"></script>
-  </head>
+    <link rel="shortcut icon" href="./IMG/STORY.ico">
+</head>
 
-  <body>
+<body>
     <style>
-      body {
-        background-color: silver;
-      }
+        body {
+            background-color: silver;
+        }
 
-      .footer {
-        width: 99%;
-        /* background-color: #E4007F; */
-        background-color: black;
-        display: inline-flex;
-        font-size: 1rem;
-        position: absolute;
-        bottom: 1px;
-      }
+        .footer {
+            width: 99%;
+            /* background-color: #E4007F; */
+            background-color: black;
+            display: inline-flex;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 1px;
+        }
 
-      .footer span {
-        text-align: center;
-        width: 100%;
-      }
-      .footer span a {
-        color: blanchedalmond;
-      }
+        .footer span {
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer span a {
+            color: blanchedalmond;
+        }
     </style>
-  </body>
-  <h1 class="neon" style="text-align: center">
+</body>
+<h1 class="neon" style="text-align: center">
     Welcome to METAVERSE DYNAMIC STORY CLUB
-  </h1>
-  <h1 id="myCount" class="heading" style="text-align: center; display: none">
+</h1>
+<h1 id="myCount" class="heading" style="text-align: center; display: none">
     00 : 00 : 00 : 00
-  </h1>
-  <div style="width: 50%; height: 50%; margin: auto">
+</h1>
+<div style="width: 50%; height: 50%; margin: auto">
     <span style="display: inline-flex; width: 100%; margin-bottom: 10px">
-      <input
-        onkeydown="keyup_submit(event);"
-        placeholder="Input base64 of STORY or LOOT to decode image."
-        id="v_tokenURI"
-        style="width: 100%"
-      />
-      <button onclick="tokenURITransform()">Decode</button>
+        <input onkeydown="keyup_submit(event);" placeholder="Input NFT ID." id="v_tokenURI" style="width: 100%" />
+        <button onclick="tokenURITransform()">Generate!</button>
     </span>
     <br />
     <img id="imgx" />
-  </div>
-  <footer class="footer neon">
-    <span
-      ><a
-        href="href=https://etherscan.io/address/0x1510b4bc4f6d19b17b00f2d330cdc4b2bc1f470a"
-      >
-        DYNAMIC STORY NFT @Etherscan</a
-      ></span
-    >
+</div>
+<footer class="footer neon">
+    <span><a href="./Decoder.html">
+            Decoder for LOOT (base64 to image)</a></span>
+    <span><a href="https://etherscan.io/address/0x1510b4bc4f6d19b17b00f2d330cdc4b2bc1f470a" target="_blank">
+            DYNAMIC STORY NFT @Etherscan</a></span>
+    <span><a href="https://www.storyproject.xyz/">Website</a></span>
     <span>© Cyberforker</span>
-  </footer>
+</footer>
+
 </html>
