@@ -1,4 +1,4 @@
-# STORY-tokenURI-decoder-Compatible-LOOT
+# [STORY-tokenURI-decoder-Compatible-LOOT](https://cyberfork.github.io/STORY-tokenURI-decoder-Compatible-LOOT/)
 
 Each story has nine hints, each hint is made by p-C-a-r-e (plotMark - COMPONENT- additional - rarity - extral Role).
 The nine hints type is: time/weather/space/object/role/motion/element/location/sign.
